@@ -67,7 +67,7 @@ function readUsers() {
     try {
         return JSON.parse(fs.readFileSync(__dirname + '/users.json', 'utf8'));
     } catch (e) {
-        return {};
+        return [];
     }
 }
 
@@ -75,33 +75,38 @@ function writeUsers(users) {
     fs.writeFileSync(__dirname + '/users.json', JSON.stringify(users, null, 2), 'utf8');
 }
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
 // Registration endpoint
 app.post('/register', function(req, res) {
-    const { username, password } = req.body;
-    if (!username || !password) {
-        res.status(400).send('Username and password required.');
+    const { username } = req.body;
+    if (!username) {
+        res.status(400).send('Username required.');
         return;
     }
     let users = readUsers();
-    if (users[username]) {
+    if (users.includes(username)) {
         res.status(409).send('Username already exists.');
         return;
     }
-    users[username] = { password: password };
+    users.push(username);
     writeUsers(users);
     res.status(200).send('Registration successful.');
 });
 
 // Login endpoint
 app.post('/login', function(req, res) {
-    const { username, password } = req.body;
-    if (!username || !password) {
-        res.status(400).send('Username and password required.');
+    const { username } = req.body;
+    if (!username) {
+        res.status(400).send('Username required.');
         return;
     }
     let users = readUsers();
-    if (!users[username] || users[username].password !== password) {
-        res.status(401).send('Invalid credentials.');
+    if (!users.includes(username)) {
+        res.status(401).send('Invalid username.');
         return;
     }
     // Create session
@@ -129,12 +134,8 @@ import_checks(checks_path).then(function (cs) {
     console.log('Failed to import checks: ');
 });
 
-//set up routing information
+ //set up routing information
 app.use('/static', express.static('./static'));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-var cookieParser = require('cookie-parser');
-app.use(cookieParser());
 scorebot.use(bodyParser.urlencoded({ extended: false }));
 scorebot.use(bodyParser.json());
 server.listen(3000);

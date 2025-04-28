@@ -30,10 +30,6 @@
         <label>Username</label>
         <input type="text" name="username" placeholder="Enter username" required>
       </div>
-      <div class="field">
-        <label>Password</label>
-        <input type="password" name="password" placeholder="Enter password" required>
-      </div>
       <button class="ui primary button" type="submit">Login</button>
     </form>
     <div id="message" class="ui message" style="display:none;"></div>
@@ -45,11 +41,10 @@
         e.preventDefault();
         const form = e.target;
         const username = form.username.value;
-        const password = form.password.value;
         fetch('/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username, password })
+          body: JSON.stringify({ username })
         })
         .then(async response => {
           const text = await response.text();
