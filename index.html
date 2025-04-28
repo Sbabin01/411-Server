@@ -154,40 +154,38 @@
             socket.on('message', console.log.bind(console));
 
             function buildTables(data) {
-                teams = data["teams"];
-                machines = data["machines"];
-                for(var team_name in teams) {
-                    color = teams[team_name];
-                    $("#tables").append("<table class=\"ui " + color + " fixed table\"><thead><tr><th>"+team_name+" Machines</th><th>Status</th><th>Services</th></tr></thead><tbody id=\""+ color+"_machines\"></tbody></table>");
-                }
-                $("#tables").append("<table class=\"ui grey fixed table\"><thead><tr><th>Unclaimed Machines</th><th>Status</th><th>Services</th></tr></thead><tbody id=\"grey_machines\"></tbody></table>");
-
-                for(var name in machines) {
-                    machine = machines[name];
-                    id = machine["id"]
-                    color = machine["color"];
-                    console.log("This machine is: " + color);
-                    console.log(machine);
-                    $("#" + color + "_machines").append("<tr onclick=\"javascript:$('."+color + "_" + id.toLowerCase() + "').toggle('fast');\" class='" + color + "_" + id.toLowerCase() + "_control machine_row'><td><i class=\"chevron down icon\"></i>" + name + "</td><td><div id='" + color + "_" + id.toLowerCase() + "_bar' class=\"ui indicating progress active\" data-percent=\""+machine["percentage"] + "\" style=\"margin-bottom: 0px;\"><div id='" + color + "_" + id.toLowerCase() + "_bar_inner' class=\"bar\" style=\"transition-duration: 300ms; width: "+machine["percentage"]+"%;\"></div></div></td><td id=\"" + color + "_" + id.toLowerCase() + "_status\">" + machine["status"] + "</td></tr>");
-                    for(var service in machine["services"]) {
-                        var status = machine["services"][service]["status"];
-                        var port = machine["services"][service]["port"];
-                        if(status == "open") {
-                            category = "positive";
+                const machines = data["machines"];
+                $("#tables").append("<table class=\"ui fixed table\"><thead><tr><th>Machine</th><th>Owner (Username)</th><th>Status</th><th>Services</th></tr></thead><tbody id=\"machines_table\"></tbody></table>");
+                for (var name in machines) {
+                    const machine = machines[name];
+                    const id = machine["id"];
+                    const owner = machine["owner"] && machine["owner"] !== "none" ? machine["owner"] : "<span style='color:gray'>Unclaimed</span>";
+                    let servicesHtml = "";
+                    for (var service in machine["services"]) {
+                        const status = machine["services"][service]["status"];
+                        const port = machine["services"][service]["port"];
+                        let icon = "";
+                        let icon_color = "";
+                        if (status == "open") {
                             icon = "checkmark";
-                            icon_color = "green"
+                            icon_color = "green";
                         } else if (status == "closed") {
-                            category = "negative";
                             icon = "remove";
                             icon_color = "red";
                         } else if (status == "issue") {
-                            category = "warning";
                             icon = "warning";
                             icon_color = "yellow";
                         }
-                        $("#" + color + "_machines").append("<tr id=\"" + color + "_" + id.toLowerCase() + "_" + port + "\" class=\"" + category + " " + color + "_" + id.toLowerCase() + "\"><td class=\"center aligned\"><i id=\"" + color + "_" + id.toLowerCase() + "_" + port + "_icon\" class=\"large " + icon_color + " " + icon + " icon\"></i> </td><td>" + service + " - " + port + "</td><td id=\"" + color + "_" + id.toLowerCase() + "_" + port + "_status\">"+status+"</td></tr>");
+                        servicesHtml += `<div><i class="icon ${icon_color} ${icon}"></i> ${service} - ${port} (${status})</div>`;
                     }
-                    $("."+color + "_" + id.toLowerCase()).hide();
+                    $("#machines_table").append(
+                        `<tr>
+                            <td>${name}</td>
+                            <td>${owner}</td>
+                            <td>${machine["status"]}</td>
+                            <td>${servicesHtml}</td>
+                        </tr>`
+                    );
                 }
             }
             function updateTables(data) {
@@ -262,14 +260,10 @@
                 }
             }
             function buildChart(data) {
-                console.log("correct:");
-                console.log(data["teams"])
-                console.log(data["chart"].map(first).map(function(team_name) {return data["teams"][team_name]}));
+                // Chart now uses usernames as series
                 chart = c3.generate({
-
                     bindto: '#chart',
-                    data: { columns: data["chart"] },
-                    color: { pattern: data["chart"].map(first).map(function(team_name) {return data["teams"][team_name]}) }
+                    data: { columns: data["chart"] }
                 });
                 chart.resize();
             }
@@ -292,7 +286,15 @@
                     style: cytoscape.stylesheet()
                     .selector('node')
                     .css({
-                        'content': 'data(name)',
+                        'content': function(ele) {
+                            var name = ele.data('name');
+                            var owner = ele.data('owner');
+                            if (owner && owner !== "none") {
+                                return name + "\\n(" + owner + ")";
+                            } else {
+                                return name + "\\n(Unclaimed)";
+                            }
+                        },
                         'text-valign': 'center',
                         'text-outline-width': 2,
                         'text-outline-color': 'data(color)',

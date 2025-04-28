@@ -146,31 +146,6 @@ app.get('/login.html', function (req, res) { res.sendFile(__dirname + '/login.ht
 scorebot.get("/", function (req, res) { handle(req, res, req.query["team"]); });
 scorebot.post("/", function(req, res) { handle(req, res, req.body.team); });
 
-// Endpoint to add a new team
-app.post('/add-user', function(req, res) {
-    const { userName } = req.body;
-    if (userName) {
-        environment["users"][userName] = {};
-        res.status(200).send(`User ${userName} added successfully.`);
-    } else {
-        res.status(400).send('Invalid user data.');
-    }
-});
-
-// Endpoint to add a new player
-app.post('/add-player', function(req, res) {
-    const { playerName, teamName } = req.body;
-    if (playerName && teamName && environment["teams"][teamName]) {
-        // Assuming players are stored in a similar structure
-        if (!environment["players"]) {
-            environment["players"] = {};
-        }
-        environment["players"][playerName] = teamName;
-        res.status(200).send(`Player ${playerName} added to team ${teamName} successfully.`);
-    } else {
-        res.status(400).send('Invalid player data or team does not exist.');
-    }
-});
 
 calculate_score();
 // Emit current data on connection
@@ -186,8 +161,8 @@ io.on('connection', function(socket) {
     });
 });
 
-function handle(req, res, color) {
-    var body='';
+function handle(req, res, username) {
+    var body = '';
     var ip;
     if (DEBUG_CLAIM_MODE) {
         ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
@@ -199,35 +174,38 @@ function handle(req, res, color) {
     var claim_times = environment["claim_times"];
     var name = check_valid(ip);
 
-    var team_name = get_team_by_color(color);
-    console.log(("[!] Attempted claim from " + ip + " on machine " + name + " for color " + color + " for team " + team_name+"").yellow);
-    if(team_name in environment["teams"] && name != "") {
+    // username is now passed directly
+    console.log(("[!] Attempted claim from " + ip + " on machine " + name + " for user " + username).yellow);
+    if (username && name != "") {
         var now = new Date();
 
-        if(name in claim_times && team_name in claim_times[name] && now.getTime() - claim_times[name][team_name] < CLAIM_DELAY) {
+        if (name in claim_times && username in claim_times[name] && now.getTime() - claim_times[name][username] < CLAIM_DELAY) {
             res.write("Cannot claim box - please wait.");
             console.log("[!] Could not claim box - enough time has not yet passed.".red)
-            claim_times[name][team_name] = now.getTime()
-        } else if(environment["machines"][name]["owner"] == team_name) {
-            res.write("Your team already owns this box - cannot reclaim.");
-            console.log("[!] Could not claim box - this team appears to own this box already".red)
-            if(!(name in claim_times)) {
+            claim_times[name][username] = now.getTime()
+        } else if (environment["machines"][name]["owner"] == username) {
+            res.write("You already own this box - cannot reclaim.");
+            console.log("[!] Could not claim box - this user appears to own this box already".red)
+            if (!(name in claim_times)) {
                 claim_times[name] = {}
             }
-            claim_times[name][team_name] = now.getTime()
+            claim_times[name][username] = now.getTime()
         } else {
-            if(!(name in claim_times)) {
+            if (!(name in claim_times)) {
                 claim_times[name] = {}
             }
-            claim_times[name][team_name] = now.getTime();
-            claim_machine(name, team_name);
-            environment["machines"][name]["owner"] == team_name;
-            environment["messages"].push(pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds()) + " - <span class=\"ui " + environment["teams"][team_name] + " small inverted header\">" + team_name.cap() + "<\/span> team has claimed " + name + "<br/>");
-            res.write("Box claimed for team " + team_name + ".");
-            console.log(("[*] Box " + name + " ("+ip+") claimed for team " + team_name + ".").green);
+            claim_times[name][username] = now.getTime();
+            claim_machine(name, username);
+            environment["machines"][name]["owner"] = username;
+            environment["messages"].push(
+                pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds()) +
+                " - <span class=\"ui small inverted header\">" + username + "<\/span> has claimed " + name + "<br/>"
+            );
+            res.write("Box claimed for user " + username + ".");
+            console.log(("[*] Box " + name + " (" + ip + ") claimed for user " + username + ".").green);
         }
     } else {
-        res.write("Unknown team or machine.")
+        res.write("Unknown user or machine.")
     }
     res.end();
 }
@@ -314,77 +292,67 @@ function scan_net() {
     });
 }
 
-function claim_machine(name, team_name) {
-    if(name in environment["machines"]) {
-        for (var i = 0;i < environment["graph"]["nodes"].length; i++) {
+function claim_machine(name, username) {
+    if (name in environment["machines"]) {
+        for (var i = 0; i < environment["graph"]["nodes"].length; i++) {
             var node = environment["graph"]["nodes"][i];
             if (node["data"]["name"] == name) {
-                node["data"]["color"] = environment["teams"][team_name];
+                node["data"]["color"] = "grey"; // or assign a default color, or remove this line
             }
         }
-        environment["machines"][name]["color"] = environment["teams"][team_name];
-        environment["machines"][name]["owner"] = team_name;
-        io.sockets.emit('update', { id: environment["machines"][name]["id"], color: environment["teams"][team_name] });
+        environment["machines"][name]["color"] = "grey"; // or remove color field entirely
+        environment["machines"][name]["owner"] = username;
+        io.sockets.emit('update', { id: environment["machines"][name]["id"], owner: username });
         return true;
     } else {
         return false;
     }
 }
 
-function get_team_by_color(color) {
-    for(var team_name in environment["teams"]) {
-        if(environment["teams"][team_name] == color) { return team_name; }
-    }
-    return null;
-}
 
 function calculate_score() {
     environment["scoring_iteration"] += 1;
     var s = {};
     var ret = [];
-    for (owner in environment["teams"]) {
-        s[owner] = 0;
-    }
-    for(var name in environment["machines"]) {
+    // Use usernames as owners
+    for (var name in environment["machines"]) {
         var machine = environment["machines"][name];
         var owner = machine["owner"];
         var id = machine["id"];
 
-        if(owner in environment["teams"]) {
+        if (owner && owner !== "none") {
             var val = BOX_OWNERSHIP_SCORE;
-            val += environment["scoring_iteration"] / EXP_VAL*val;
+            val += environment["scoring_iteration"] / EXP_VAL * val;
             val = Math.round(val * 100) / 100
 
-            s[owner] = s[owner] + val || val
+            s[owner] = (s[owner] || 0) + val;
             var num_open = 0;
-            for(var service in machine["services"]) {
-
+            for (var service in machine["services"]) {
                 val = 0.0;
-                if(machine["services"][service]["status"] == "open") {
+                if (machine["services"][service]["status"] == "open") {
                     val = PORT_OPEN_SCORE
                     num_open += 1;
                 } else {
                     val = -1 * PORT_CLOSED_SCORE
                 }
-                val += environment["scoring_iteration"] / EXP_VAL*val
+                val += environment["scoring_iteration"] / EXP_VAL * val
                 val = Math.round(val * 100) / 100
-                s[owner] += Math.round(val + environment["scoring_iteration"]/EXP_VAL*val);
+                s[owner] += Math.round(val + environment["scoring_iteration"] / EXP_VAL * val);
             }
         }
     }
-    for(var team in s) {
-        if(environment["scores"][team] == undefined) {
-            environment["scores"][team] = [s[team]];
+    for (var user in s) {
+        if (environment["scores"][user] == undefined) {
+            environment["scores"][user] = [s[user]];
         } else {
-            environment["scores"][team].push(last(environment["scores"][team]) + s[team]);
+            environment["scores"][user].push(last(environment["scores"][user]) + s[user]);
         }
     }
     var i = 0;
-    for(team in environment["scores"]) {
-        ret[i] = [team].concat(environment["scores"][team]);
+    for (var user in environment["scores"]) {
+        ret[i] = [user].concat(environment["scores"][user]);
         i++;
     }
-    //console.log(ret);
     environment["chart_scores"] = ret;
 
     save_network();
