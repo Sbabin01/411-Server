@@ -1,0 +1,919 @@
+{
+  "machines": {
+    "Scorebot": {
+      "name": "Scorebot",
+      "id": "Scorebot",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        }
+      },
+            "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.30",
+        "10.3.0.30",
+        "10.5.0.30",
+        "10.4.0.30"
+      ],
+      "owner": "none",
+      "network_connections": []
+    },
+    "Red Windows FTP": {
+      "name": "Red Windows FTP",
+      "id": "RedWindowsFTP",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "netbiosd": {
+          "port": 445,
+          "status": "open"
+        }
+      },
+            "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.16",
+        "10.3.0.16",
+        "10.5.0.16",
+        "10.4.0.16"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+      ]
+    },
+    "Green Windows FTP": {
+      "name": "Green Windows FTP",
+      "id": "GreenWindowsFTP",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "netbiosd": {
+          "port": 445,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.15",
+        "10.2.0.15",
+        "10.4.0.15",
+        "10.5.0.15"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+      ]
+    },
+    "Orange Windows FTP": {
+      "name": "Orange Windows FTP",
+      "id": "OrangeWindowsFTP",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "netbiosd": {
+          "port": 445,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.4.0.17",
+        "10.2.0.17",
+        "10.3.0.17",
+        "10.5.0.17"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+      ]
+    },
+    "Blue Windows FTP": {
+      "name": "Blue Windows FTP",
+      "id": "BlueWindowsFTP",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "netbiosd": {
+          "port": 445,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.5.0.5",
+        "10.3.0.9",
+        "10.2.0.9",
+        "10.4.0.9"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+      ]
+    },
+    "RG Linux FTP": {
+      "name": "RG Linux FTP",
+      "id": "RGLinuxFTP",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.3",
+        "10.3.0.3"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "1766a75a-7130-4485-a9a6-b05845f036ff"
+      ]
+    },
+    "OB Linux FTP": {
+      "name": "OB Linux FTP",
+      "id": "OBLinuxFTP",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.4.0.3",
+        "10.5.0.3"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+      ]
+    },
+    "OG Compiler": {
+      "name": "OG Compiler",
+      "id": "OGCompiler",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "compiler": {
+          "port": 33333,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.4",
+        "10.4.0.4",
+        "10.1.0.2"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "39015285-7212-4609-b24e-2a774773411f"
+      ]
+    },
+    "RB Compiler": {
+      "name": "RB Compiler",
+      "id": "RBCompiler",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "compiler": {
+          "port": 33333,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.5.0.4",
+        "10.2.0.4"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+      ]
+    },
+    "Green Asset 1": {
+      "name": "Green Asset 1",
+      "id": "GreenAsset1",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "http-alt": {
+          "port": 8080,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.6"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff"
+      ]
+    },
+    "Blue Asset 1": {
+      "name": "Blue Asset 1",
+      "id": "BlueAsset1",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "http-alt": {
+          "port": 8080,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.5.0.6"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+      ]
+    },
+    "Orange Asset 1": {
+      "name": "Orange Asset 1",
+      "id": "OrangeAsset1",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "http-alt": {
+          "port": 8080,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.4.0.6"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+      ]
+    },
+    "Red Asset 2": {
+      "name": "Red Asset 2",
+      "id": "RedAsset2",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.12"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+      ]
+    },
+    "Green Asset 2": {
+      "name": "Green Asset 2",
+      "id": "GreenAsset2",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.12"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff"
+      ]
+    },
+    "Blue Asset 2": {
+      "name": "Blue Asset 2",
+      "id": "BlueAsset2",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.5.0.12"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+      ]
+    },
+    "Orange Asset 2": {
+      "name": "Orange Asset 2",
+      "id": "OrangeAsset2",
+      "services": {
+        "ftp": {
+          "port": 21,
+          "status": "open"
+        },
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.4.0.12"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+      ]
+    },
+    "RO Workstation": {
+      "name": "RO Workstation",
+      "id": "ROWorkstation",
+      "services": {
+        "rdp": {
+          "port": 3389,
+          "status": "open"
+        },
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "discovery": {
+          "port": 5357,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.2",
+        "10.4.0.2",
+        "10.1.0.1"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "39015285-7212-4609-b24e-2a774773411f"
+      ]
+    },
+    "GB Workstation": {
+      "name": "GB Workstation",
+      "id": "GBWorkstation",
+      "services": {
+        "rdp": {
+          "port": 3389,
+          "status": "open"
+        },
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "discovery": {
+          "port": 5357,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.2",
+        "10.5.0.2",
+        "10.7.0.1"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+      ]
+    },
+    "Orange Asset 3": {
+      "name": "Orange Asset 3",
+      "id": "OrangeAsset3",
+      "services": {
+        "rpc": {
+          "port": 135,
+          "status": "open"
+        },
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "ad": {
+          "port": 1028,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.4.0.10"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+      ]
+    },
+    "DOMAIN CONTROLLER": {
+      "name": "DOMAIN CONTROLLER",
+      "id": "DOMAINCONTROLLER",
+      "services": {
+        "smb": {
+          "port": 445,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.20",
+        "10.4.0.20",
+        "10.5.0.20",
+        "10.3.0.20"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "1766a75a-7130-4485-a9a6-b05845f036ff"
+      ]
+    },
+    "Blue Asset 3": {
+      "name": "Blue Asset 3",
+      "id": "BlueAsset3",
+      "services": {
+        "rpc": {
+          "port": 135,
+          "status": "open"
+        },
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "ad": {
+          "port": 1028,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.5.0.10"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+      ]
+    },
+    "Red Asset 3": {
+      "name": "Red Asset 3",
+      "id": "RedAsset3",
+      "services": {
+        "rpc": {
+          "port": 135,
+          "status": "open"
+        },
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "ad": {
+          "port": 1028,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.10"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+      ]
+    },
+    "Green Asset 3": {
+      "name": "Green Asset 3",
+      "id": "GreenAsset3",
+      "services": {
+        "rpc": {
+          "port": 135,
+          "status": "open"
+        },
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "ad": {
+          "port": 1028,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.10"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff"
+      ]
+    },
+    "Windows Fullpivot": {
+      "name": "Windows Fullpivot",
+      "id": "WindowsFullpivot",
+      "services": {
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "rdp": {
+          "port": 3389,
+          "status": "open"
+        },
+        "http-alt": {
+          "port": 8080,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.11",
+        "10.4.0.11",
+        "10.5.0.11",
+        "10.3.0.11",
+        "10.1.0.5",
+        "10.1.0.6"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "39015285-7212-4609-b24e-2a774773411f",
+        "39015285-7212-4609-b24e-2a774773411f"
+      ]
+    },
+    "Windows Fullpivot 2": {
+      "name": "Windows Fullpivot 2",
+      "id": "WindowsFullpivot2",
+      "services": {
+        "smb": {
+          "port": 445,
+          "status": "open"
+        },
+        "rdp": {
+          "port": 3389,
+          "status": "open"
+        },
+        "http-alt": {
+          "port": 8080,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.14",
+        "10.5.0.14",
+        "10.4.0.14",
+        "10.2.0.14",
+        "10.7.0.4"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+      ]
+    },
+    "Red Asset 1": {
+      "name": "Red Asset 1",
+      "id": "RedAsset1",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        },
+        "http": {
+          "port": 80,
+          "status": "open"
+        },
+        "http-alt": {
+          "port": 8080,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "3/3",
+      "percentage": "100",
+      "ip": [
+        null,
+        "10.2.0.6",
+        "10.1.0.4"
+      ],
+      "owner": "none",
+      "network_connections": [
+        null,
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+        "39015285-7212-4609-b24e-2a774773411f"
+      ]
+    },
+    "Red Kali": {
+      "name": "Red Kali",
+      "id": "RedKali",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "10.2.0.1"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+      ]
+    },
+    "Green Kali": {
+      "name": "Green Kali",
+      "id": "GreenKali",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "10.3.0.1",
+        "10.7.0.5"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "1766a75a-7130-4485-a9a6-b05845f036ff",
+        "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+      ]
+    },
+    "Orange Kali": {
+      "name": "Orange Kali",
+      "id": "OrangeKali",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "10.4.0.1",
+        "10.1.0.7"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+        "39015285-7212-4609-b24e-2a774773411f"
+      ]
+    },
+    "Blue Kali": {
+      "name": "Blue Kali",
+      "id": "BlueKali",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "10.5.0.1",
+        "10.7.0.6"
+      ],
+      "owner": "none",
+      "network_connections": [
+        "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+        "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+      ]
+    },
+    "New VM": {
+      "name": "New VM",
+      "id": "NewVM",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "192.168.1.127"
+      ],
+      "owner": "none",
+      "network_connections": []
+    }
+  },
+  "routers": {
+    "d9b1c62e-d00d-4c06-a689-01ac98877a7a": {
+      "ip": [
+        "10.2.0.254/16"
+      ],
+      "id": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+      "name": "Router 1"
+    },
+    "1766a75a-7130-4485-a9a6-b05845f036ff": {
+      "ip": [
+        "10.3.0.254/16"
+      ],
+      "id": "1766a75a-7130-4485-a9a6-b05845f036ff",
+      "name": "Router 2"
+    },
+    "871f56b5-a91b-4e9d-a48a-d76664965cc1": {
+      "ip": [
+        "10.4.0.254/16"
+      ],
+      "id": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+      "name": "Router 3"
+    },
+    "5b0db9f2-e019-4b3b-9a63-76caeef25df9": {
+      "ip": [
+        "10.5.0.254/16"
+      ],
+      "id": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+      "name": "Router 4"
+    }
+  }
+}

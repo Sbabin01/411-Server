@@ -1,0 +1,35 @@
+{
+  "name": "Koth-Scorebot",
+  "version": "0.0.1",
+  "description": "A scorebot for Koth exercises",
+  "author": "https://github.com/Kkevsterrr",
+  "contributors": [
+    {
+      "name": "https://github.com/ciler819"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kkevsterrr/koth"
+  },
+  "bugs": {
+    "url": "https://github.com/Kkevsterrr/koth/issues"
+  },
+  "dependencies": {
+    "async": "latest",
+    "body-parser": "latest",
+    "colors": "latest",
+    "cookie-parser": "^1.4.7",
+    "evilscan": "latest",
+    "express": "latest",
+    "native-dns": "latest",
+    "net-ping": "latest",
+    "portscanner": "latest",
+    "promise-spread": "^0.1.0",
+    "scp2": "latest",
+    "simple-ssh": "latest",
+    "socket.io": "latest"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

@@ -1,0 +1,2145 @@
+{
+    "ownership": {
+        "Scorebot": "none",
+        "RedWindowsFTP": "none",
+        "GreenWindowsFTP": "none",
+        "OrangeWindowsFTP": "none",
+        "BlueWindowsFTP": "none",
+        "RGLinuxFTP": "none",
+        "OBLinuxFTP": "none",
+        "OGCompiler": "none",
+        "RBCompiler": "none",
+        "GreenAsset1": "none",
+        "BlueAsset1": "none",
+        "OrangeAsset1": "none",
+        "RedAsset2": "none",
+        "GreenAsset2": "none",
+        "BlueAsset2": "none",
+        "OrangeAsset2": "none",
+        "ROWorkstation": "none",
+        "GBWorkstation": "none",
+        "OrangeAsset3": "none",
+        "DOMAINCONTROLLER": "none",
+        "BlueAsset3": "none",
+        "RedAsset3": "none",
+        "GreenAsset3": "none",
+        "WindowsFullpivot": "none",
+        "WindowsFullpivot2": "none",
+        "RedAsset1": "none",
+        "RedKali": "none",
+        "GreenKali": "none",
+        "OrangeKali": "none",
+        "BlueKali": "none"
+    },
+    "claim_times": {},
+    "scores": {
+        "Red Team": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "Blue Team": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "Green Team": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "Orange Team": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "ports": {},
+    "messages": [],
+    "scoring_iteration": 42,
+    "chart_scores": [
+        [
+            "Red Team",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            "Blue Team",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            "Green Team",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            "Orange Team",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "teams": {
+        "Red Team": "red",
+        "Blue Team": "blue",
+        "Green Team": "green",
+        "Orange Team": "orange"
+    },
+    "ignore": [],
+    "graph": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "name": "Router 1",
+                    "weight": 5,
+                    "color": "black",
+                    "ip": [
+                        "10.2.0.254/16"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "id": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "name": "Router 2",
+                    "weight": 5,
+                    "color": "black",
+                    "ip": [
+                        "10.3.0.254/16"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "id": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "name": "Router 3",
+                    "weight": 5,
+                    "color": "black",
+                    "ip": [
+                        "10.4.0.254/16"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "id": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "name": "Router 4",
+                    "weight": 5,
+                    "color": "black",
+                    "ip": [
+                        "10.5.0.254/16"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Scorebot",
+                    "id": "Scorebot",
+                    "weight": 5,
+                    "color": "black",
+                    "ip": [
+                        "10.2.0.30",
+                        "10.3.0.30",
+                        "10.5.0.30",
+                        "10.4.0.30"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Red Windows FTP",
+                    "id": "RedWindowsFTP",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.16",
+                        "10.3.0.16",
+                        "10.5.0.16",
+                        "10.4.0.16"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Green Windows FTP",
+                    "id": "GreenWindowsFTP",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.15",
+                        "10.2.0.15",
+                        "10.4.0.15",
+                        "10.5.0.15"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Orange Windows FTP",
+                    "id": "OrangeWindowsFTP",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.4.0.17",
+                        "10.2.0.17",
+                        "10.3.0.17",
+                        "10.5.0.17"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Blue Windows FTP",
+                    "id": "BlueWindowsFTP",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.5.0.5",
+                        "10.3.0.9",
+                        "10.2.0.9",
+                        "10.4.0.9"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "RG Linux FTP",
+                    "id": "RGLinuxFTP",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.3",
+                        "10.3.0.3"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "OB Linux FTP",
+                    "id": "OBLinuxFTP",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.4.0.3",
+                        "10.5.0.3"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "OG Compiler",
+                    "id": "OGCompiler",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.4",
+                        "10.4.0.4",
+                        "10.1.0.2"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "RB Compiler",
+                    "id": "RBCompiler",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.5.0.4",
+                        "10.2.0.4"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Green Asset 1",
+                    "id": "GreenAsset1",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.6"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Blue Asset 1",
+                    "id": "BlueAsset1",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.5.0.6"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Orange Asset 1",
+                    "id": "OrangeAsset1",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.4.0.6"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Red Asset 2",
+                    "id": "RedAsset2",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.12"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Green Asset 2",
+                    "id": "GreenAsset2",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.12"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Blue Asset 2",
+                    "id": "BlueAsset2",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.5.0.12"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Orange Asset 2",
+                    "id": "OrangeAsset2",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.4.0.12"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "RO Workstation",
+                    "id": "ROWorkstation",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.2",
+                        "10.4.0.2",
+                        "10.1.0.1"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "GB Workstation",
+                    "id": "GBWorkstation",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.2",
+                        "10.5.0.2",
+                        "10.7.0.1"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Orange Asset 3",
+                    "id": "OrangeAsset3",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.4.0.10"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "DOMAIN CONTROLLER",
+                    "id": "DOMAINCONTROLLER",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.20",
+                        "10.4.0.20",
+                        "10.5.0.20",
+                        "10.3.0.20"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Blue Asset 3",
+                    "id": "BlueAsset3",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.5.0.10"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Red Asset 3",
+                    "id": "RedAsset3",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.10"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Green Asset 3",
+                    "id": "GreenAsset3",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.10"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Windows Fullpivot",
+                    "id": "WindowsFullpivot",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.11",
+                        "10.4.0.11",
+                        "10.5.0.11",
+                        "10.3.0.11",
+                        "10.1.0.5",
+                        "10.1.0.6"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Windows Fullpivot 2",
+                    "id": "WindowsFullpivot2",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.14",
+                        "10.5.0.14",
+                        "10.4.0.14",
+                        "10.2.0.14",
+                        "10.7.0.4"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Red Asset 1",
+                    "id": "RedAsset1",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        null,
+                        "10.2.0.6",
+                        "10.1.0.4"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Red Kali",
+                    "id": "RedKali",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.2.0.1"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Green Kali",
+                    "id": "GreenKali",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.3.0.1",
+                        "10.7.0.5"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Orange Kali",
+                    "id": "OrangeKali",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.4.0.1",
+                        "10.1.0.7"
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "name": "Blue Kali",
+                    "id": "BlueKali",
+                    "weight": 5,
+                    "color": "grey",
+                    "ip": [
+                        "10.5.0.1",
+                        "10.7.0.6"
+                    ]
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "RedWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "RedWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "RedWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "RedWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "GreenWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "GreenWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "GreenWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "GreenWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "OrangeWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "OrangeWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "OrangeWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "OrangeWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "BlueWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "BlueWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "BlueWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "BlueWindowsFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "RGLinuxFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "RGLinuxFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "OBLinuxFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "OBLinuxFTP",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "OGCompiler",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "OGCompiler",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "RBCompiler",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "RBCompiler",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "GreenAsset1",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "BlueAsset1",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "OrangeAsset1",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "RedAsset2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "GreenAsset2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "BlueAsset2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "OrangeAsset2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "ROWorkstation",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "ROWorkstation",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "GBWorkstation",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "GBWorkstation",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "OrangeAsset3",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "DOMAINCONTROLLER",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "DOMAINCONTROLLER",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "DOMAINCONTROLLER",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "DOMAINCONTROLLER",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "BlueAsset3",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "RedAsset3",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "GreenAsset3",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "WindowsFullpivot",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "WindowsFullpivot",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "WindowsFullpivot",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "WindowsFullpivot",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "WindowsFullpivot2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "WindowsFullpivot2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "WindowsFullpivot2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "WindowsFullpivot2",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "RedAsset1",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                    "target": "RedKali",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "1766a75a-7130-4485-a9a6-b05845f036ff",
+                    "target": "GreenKali",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                    "target": "OrangeKali",
+                    "color": "black",
+                    "strength": 10
+                }
+            },
+            {
+                "data": {
+                    "source": "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                    "target": "BlueKali",
+                    "color": "black",
+                    "strength": 10
+                }
+            }
+        ]
+    },
+    "machines": {
+        "Scorebot": {
+            "name": "Scorebot",
+            "id": "Scorebot",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                }
+            },
+            "color": "black",
+            "status": "1/1",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.30",
+                "10.3.0.30",
+                "10.5.0.30",
+                "10.4.0.30"
+            ],
+            "owner": "none",
+            "network_connections": []
+        },
+        "Red Windows FTP": {
+            "name": "Red Windows FTP",
+            "id": "RedWindowsFTP",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "netbiosd": {
+                    "port": 445,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.16",
+                "10.3.0.16",
+                "10.5.0.16",
+                "10.4.0.16"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+            ]
+        },
+        "Green Windows FTP": {
+            "name": "Green Windows FTP",
+            "id": "GreenWindowsFTP",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "netbiosd": {
+                    "port": 445,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.15",
+                "10.2.0.15",
+                "10.4.0.15",
+                "10.5.0.15"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+            ]
+        },
+        "Orange Windows FTP": {
+            "name": "Orange Windows FTP",
+            "id": "OrangeWindowsFTP",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "netbiosd": {
+                    "port": 445,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.4.0.17",
+                "10.2.0.17",
+                "10.3.0.17",
+                "10.5.0.17"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+            ]
+        },
+        "Blue Windows FTP": {
+            "name": "Blue Windows FTP",
+            "id": "BlueWindowsFTP",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "netbiosd": {
+                    "port": 445,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.5.0.5",
+                "10.3.0.9",
+                "10.2.0.9",
+                "10.4.0.9"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+            ]
+        },
+        "RG Linux FTP": {
+            "name": "RG Linux FTP",
+            "id": "RGLinuxFTP",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.3",
+                "10.3.0.3"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "1766a75a-7130-4485-a9a6-b05845f036ff"
+            ]
+        },
+        "OB Linux FTP": {
+            "name": "OB Linux FTP",
+            "id": "OBLinuxFTP",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.4.0.3",
+                "10.5.0.3"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+            ]
+        },
+        "OG Compiler": {
+            "name": "OG Compiler",
+            "id": "OGCompiler",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "compiler": {
+                    "port": 33333,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.4",
+                "10.4.0.4",
+                "10.1.0.2"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "39015285-7212-4609-b24e-2a774773411f"
+            ]
+        },
+        "RB Compiler": {
+            "name": "RB Compiler",
+            "id": "RBCompiler",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "compiler": {
+                    "port": 33333,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.5.0.4",
+                "10.2.0.4"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+            ]
+        },
+        "Green Asset 1": {
+            "name": "Green Asset 1",
+            "id": "GreenAsset1",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "http-alt": {
+                    "port": 8080,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.6"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff"
+            ]
+        },
+        "Blue Asset 1": {
+            "name": "Blue Asset 1",
+            "id": "BlueAsset1",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "http-alt": {
+                    "port": 8080,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.5.0.6"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+            ]
+        },
+        "Orange Asset 1": {
+            "name": "Orange Asset 1",
+            "id": "OrangeAsset1",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "http-alt": {
+                    "port": 8080,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.4.0.6"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+            ]
+        },
+        "Red Asset 2": {
+            "name": "Red Asset 2",
+            "id": "RedAsset2",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.12"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+            ]
+        },
+        "Green Asset 2": {
+            "name": "Green Asset 2",
+            "id": "GreenAsset2",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.12"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff"
+            ]
+        },
+        "Blue Asset 2": {
+            "name": "Blue Asset 2",
+            "id": "BlueAsset2",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.5.0.12"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+            ]
+        },
+        "Orange Asset 2": {
+            "name": "Orange Asset 2",
+            "id": "OrangeAsset2",
+            "services": {
+                "ftp": {
+                    "port": 21,
+                    "status": "open"
+                },
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.4.0.12"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+            ]
+        },
+        "RO Workstation": {
+            "name": "RO Workstation",
+            "id": "ROWorkstation",
+            "services": {
+                "rdp": {
+                    "port": 3389,
+                    "status": "open"
+                },
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "discovery": {
+                    "port": 5357,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.2",
+                "10.4.0.2",
+                "10.1.0.1"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "39015285-7212-4609-b24e-2a774773411f"
+            ]
+        },
+        "GB Workstation": {
+            "name": "GB Workstation",
+            "id": "GBWorkstation",
+            "services": {
+                "rdp": {
+                    "port": 3389,
+                    "status": "open"
+                },
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "discovery": {
+                    "port": 5357,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.2",
+                "10.5.0.2",
+                "10.7.0.1"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+            ]
+        },
+        "Orange Asset 3": {
+            "name": "Orange Asset 3",
+            "id": "OrangeAsset3",
+            "services": {
+                "rpc": {
+                    "port": 135,
+                    "status": "open"
+                },
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "ad": {
+                    "port": 1028,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.4.0.10"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1"
+            ]
+        },
+        "DOMAIN CONTROLLER": {
+            "name": "DOMAIN CONTROLLER",
+            "id": "DOMAINCONTROLLER",
+            "services": {
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "1/1",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.20",
+                "10.4.0.20",
+                "10.5.0.20",
+                "10.3.0.20"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "1766a75a-7130-4485-a9a6-b05845f036ff"
+            ]
+        },
+        "Blue Asset 3": {
+            "name": "Blue Asset 3",
+            "id": "BlueAsset3",
+            "services": {
+                "rpc": {
+                    "port": 135,
+                    "status": "open"
+                },
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "ad": {
+                    "port": 1028,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.5.0.10"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9"
+            ]
+        },
+        "Red Asset 3": {
+            "name": "Red Asset 3",
+            "id": "RedAsset3",
+            "services": {
+                "rpc": {
+                    "port": 135,
+                    "status": "open"
+                },
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "ad": {
+                    "port": 1028,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.10"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+            ]
+        },
+        "Green Asset 3": {
+            "name": "Green Asset 3",
+            "id": "GreenAsset3",
+            "services": {
+                "rpc": {
+                    "port": 135,
+                    "status": "open"
+                },
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "ad": {
+                    "port": 1028,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.10"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff"
+            ]
+        },
+        "Windows Fullpivot": {
+            "name": "Windows Fullpivot",
+            "id": "WindowsFullpivot",
+            "services": {
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "rdp": {
+                    "port": 3389,
+                    "status": "open"
+                },
+                "http-alt": {
+                    "port": 8080,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.11",
+                "10.4.0.11",
+                "10.5.0.11",
+                "10.3.0.11",
+                "10.1.0.5",
+                "10.1.0.6"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "39015285-7212-4609-b24e-2a774773411f",
+                "39015285-7212-4609-b24e-2a774773411f"
+            ]
+        },
+        "Windows Fullpivot 2": {
+            "name": "Windows Fullpivot 2",
+            "id": "WindowsFullpivot2",
+            "services": {
+                "smb": {
+                    "port": 445,
+                    "status": "open"
+                },
+                "rdp": {
+                    "port": 3389,
+                    "status": "open"
+                },
+                "http-alt": {
+                    "port": 8080,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.14",
+                "10.5.0.14",
+                "10.4.0.14",
+                "10.2.0.14",
+                "10.7.0.4"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+            ]
+        },
+        "Red Asset 1": {
+            "name": "Red Asset 1",
+            "id": "RedAsset1",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                },
+                "http": {
+                    "port": 80,
+                    "status": "open"
+                },
+                "http-alt": {
+                    "port": 8080,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "3/3",
+            "percentage": "100",
+            "ip": [
+                null,
+                "10.2.0.6",
+                "10.1.0.4"
+            ],
+            "owner": "none",
+            "network_connections": [
+                null,
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a",
+                "39015285-7212-4609-b24e-2a774773411f"
+            ]
+        },
+        "Red Kali": {
+            "name": "Red Kali",
+            "id": "RedKali",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "1/1",
+            "percentage": "100",
+            "ip": [
+                "10.2.0.1"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "d9b1c62e-d00d-4c06-a689-01ac98877a7a"
+            ]
+        },
+        "Green Kali": {
+            "name": "Green Kali",
+            "id": "GreenKali",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "1/1",
+            "percentage": "100",
+            "ip": [
+                "10.3.0.1",
+                "10.7.0.5"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "1766a75a-7130-4485-a9a6-b05845f036ff",
+                "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+            ]
+        },
+        "Orange Kali": {
+            "name": "Orange Kali",
+            "id": "OrangeKali",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "1/1",
+            "percentage": "100",
+            "ip": [
+                "10.4.0.1",
+                "10.1.0.7"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "871f56b5-a91b-4e9d-a48a-d76664965cc1",
+                "39015285-7212-4609-b24e-2a774773411f"
+            ]
+        },
+        "Blue Kali": {
+            "name": "Blue Kali",
+            "id": "BlueKali",
+            "services": {
+                "ssh": {
+                    "port": 22,
+                    "status": "open"
+                }
+            },
+            "color": "grey",
+            "status": "1/1",
+            "percentage": "100",
+            "ip": [
+                "10.5.0.1",
+                "10.7.0.6"
+            ],
+            "owner": "none",
+            "network_connections": [
+                "5b0db9f2-e019-4b3b-9a63-76caeef25df9",
+                "0901bdf0-3214-4b64-ae5a-fea83b5aa2c0"
+            ]
+        }
+    }
+}

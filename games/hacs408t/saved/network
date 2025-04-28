@@ -1,0 +1,23 @@
+{
+  "machines": {
+    "New VM": {
+      "name": "New VM",
+      "id": "NewVM",
+      "services": {
+        "ssh": {
+          "port": 22,
+          "status": "open"
+        }
+      },
+      "color": "grey",
+      "status": "1/1",
+      "percentage": "100",
+      "ip": [
+        "192.168.1.127"
+      ],
+      "owner": "none",
+      "network_connections": []
+    }
+  },
+  "routers": {}
+}
