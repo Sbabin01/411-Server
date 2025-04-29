@@ -144,8 +144,30 @@ scorebot.listen(8000);
 app.get('/', function (req, res) { res.sendFile(__dirname + '/index.html'); });
 app.get('/register.html', function (req, res) { res.sendFile(__dirname + '/register.html'); });
 app.get('/login.html', function (req, res) { res.sendFile(__dirname + '/login.html'); });
+app.get('/scoreboard.html', function (req, res) { res.sendFile(__dirname + '/scoreboard.html'); });
 scorebot.get("/", function (req, res) { handle(req, res, req.query["team"]); });
 scorebot.post("/", function(req, res) { handle(req, res, req.body.team); });
+
+// Scoreboard data endpoint
+app.get('/scoreboard-data', function(req, res) {
+    // Get all usernames from users.json
+    let users;
+    try {
+        users = JSON.parse(fs.readFileSync(__dirname + '/users.json', 'utf8'));
+    } catch (e) {
+        users = [];
+    }
+    let scoreboard = [];
+    for (let i = 0; i < users.length; i++) {
+        let user = users[i];
+        let scores = environment["scores"][user];
+        let latest = scores && scores.length > 0 ? scores[scores.length - 1] : 0;
+        scoreboard.push({ username: user, score: latest });
+    }
+    // Sort descending by score
+    scoreboard.sort((a, b) => b.score - a.score);
+    res.json(scoreboard);
+});
 
 
 calculate_score();
@@ -299,6 +321,7 @@ function claim_machine(name, username) {
             var node = environment["graph"]["nodes"][i];
             if (node["data"]["name"] == name) {
                 node["data"]["color"] = "grey"; // or assign a default color, or remove this line
+                node["data"]["owner"] = username; // update owner in node data
             }
         }
         environment["machines"][name]["color"] = "grey"; // or remove color field entirely
@@ -421,6 +444,7 @@ function initialize_network() {
                 node["data"]["weight"] = 5;
                 node["data"]["color"] = machine["color"];
                 node["data"]["ip"] = machine["ip"];
+                node["data"]["owner"] = machine["owner"];
                 graph["nodes"].push(node);
             }
             environment["graph"] = graph;
