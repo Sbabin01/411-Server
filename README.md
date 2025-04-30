@@ -1,3 +1,5 @@
+This is a koth scoring server by Kkevsterrr remade using requirements for a Capstone project.
+All credits go to him for the origninal code located here https://github.com/Kkevsterrr/koth
 # koth
 
 King of the Hill (KotH) is an active cybersecurity competition in which multiple teams fight for control of a large vulnerable network, designed to give students experience performing and defending against penetration testing. Each team is given machines to defend, and must attack other team's boxes. 
