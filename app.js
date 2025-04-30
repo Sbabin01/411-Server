@@ -134,6 +134,7 @@ import_checks(checks_path).then(function (cs) {
     console.log('Failed to import checks: ');
 });
 
+
  //set up routing information
 app.use('/static', express.static('./static'));
 scorebot.use(bodyParser.urlencoded({ extended: false }));
