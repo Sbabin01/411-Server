@@ -19,6 +19,16 @@
     </style>
   </head>
   <body>
+    <nav class="ui fixed menu inverted navbar">
+      <a href="#" class="brand item">King of the Hill</a>
+      <a id="network_nav" href="/#network" class="active item">Network</a>
+      <a id="graph_nav" href="/#graph" class="item">Graph</a>
+      <a id="ports_nav" href="/#ports" class="item">Ports</a>
+      <a id="register_nav" href="register.html" class="item">Register</a>
+      <a id="login_nav" href="login.html" class="item">Sign In</a>
+      <a id="scoreboard_nav" href="scoreboard.html" class="item">Scoreboard</a>
+      </nav>
+    
     <h2 class="ui dividing header">
       <i class="sign in icon"></i>
       <div class="content">
@@ -52,7 +62,10 @@
           if (response.ok) {
             document.getElementById('message').className = 'ui positive message';
             document.getElementById('message').textContent = text;
-            form.reset();
+            // Wait for a second to show success message
+            setTimeout(() => {
+              window.location.href = '/'; // Redirect to main page (index.html)
+            }, 1000);
           } else {
             document.getElementById('message').className = 'ui negative message';
             document.getElementById('message').textContent = text;
@@ -65,5 +78,6 @@
         });
       });
     </script>
+    
   </body>
 </html>

@@ -1,52 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Scoreboard</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #181818; color: #f0f0f0; }
-        h1 { text-align: center; }
-        table { margin: 2em auto; border-collapse: collapse; width: 60%; background: #222; }
-        th, td { padding: 0.75em 1.5em; border-bottom: 1px solid #333; text-align: left; }
-        th { background: #333; }
-        tr:nth-child(even) { background: #242424; }
-        tr:hover { background: #2a2a2a; }
-        .rank { text-align: right; color: #aaa; }
-        .score { font-weight: bold; }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Scoreboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Semantic UI CSS for the navbar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+
+  <style>
+    /* Background and layout */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f3f4f6, #dce0e6);
+      margin: 0;
+      padding-top: 60px;
+    }
+
+    nav.ui.menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 1.5em;
+      font-size: 2.5em;
+    }
+
+    table {
+      margin: 2em auto;
+      border-collapse: collapse;
+      width: 70%;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1em;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #f9fafb;
+      color: #444;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f6f6f6;
+    }
+
+    tr:hover {
+      background-color: #e0f7fa;
+      transition: background 0.3s;
+    }
+
+    .rank {
+      text-align: right;
+      color: #999;
+    }
+
+    .score {
+      font-weight: bold;
+      color: #2d6a4f;
+    }
+  </style>
 </head>
 <body>
-    <h1>Scoreboard</h1>
-    <table>
-        <thead>
-            <tr>
-                <th class="rank">#</th>
-                <th>Username</th>
-                <th class="score">Score</th>
-            </tr>
-        </thead>
-        <tbody id="scoreboard-body">
-            <!-- Scores will be inserted here -->
-        </tbody>
-    </table>
-    <script>
-        async function loadScoreboard() {
-            const res = await fetch('/scoreboard-data');
-            const data = await res.json();
-            const tbody = document.getElementById('scoreboard-body');
-            tbody.innerHTML = '';
-            data.forEach((entry, idx) => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td class="rank">${idx + 1}</td>
-                    <td>${entry.username}</td>
-                    <td class="score">${entry.score}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-        }
-        loadScoreboard();
-        setInterval(loadScoreboard, 10000); // Refresh every 10 seconds
-    </script>
+  <!-- ✅ Nav Bar -->
+  <nav class="ui fixed menu inverted navbar">
+    <a href="#" class="brand item">King of the Hill</a>
+    <a id="network_nav" href="/#network" class="active item">Network</a>
+    <a id="graph_nav" href="/#graph" class="item">Graph</a>
+    <a id="ports_nav" href="/#ports" class="item">Ports</a>
+    <a id="register_nav" href="register.html" class="item">Register</a>
+    <a id="login_nav" href="login.html" class="item">Sign In</a>
+    <a id="scoreboard_nav" href="scoreboard.html" class="item">Scoreboard</a>
+    </nav>
+  
+
+  <!-- ✅ Scoreboard Content -->
+  <h1>Scoreboard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th class="rank">#</th>
+        <th>Username</th>
+        <th class="score">Score</th>
+      </tr>
+    </thead>
+    <tbody id="scoreboard-body">
+      <!-- Scores will be dynamically inserted here -->
+    </tbody>
+  </table>
+
+  <!-- ✅ Scoreboard JS -->
+  <script>
+    async function loadScoreboard() {
+      const res = await fetch('/scoreboard-data');
+      const data = await res.json();
+      const tbody = document.getElementById('scoreboard-body');
+      tbody.innerHTML = '';
+      data.forEach((entry, idx) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="rank">${idx + 1}</td>
+          <td>${entry.username}</td>
+          <td class="score">${entry.score}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    loadScoreboard();
+    setInterval(loadScoreboard, 10000); // Refresh every 10 seconds
+  </script>
 </body>
 </html>

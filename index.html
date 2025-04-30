@@ -347,14 +347,18 @@
         </head>
         <body>
             <nav class="ui fixed menu inverted navbar">
-            <a href="#" class="brand item">King of the Hill</a>
-            <a id="network_nav" href="#" class="active item">Network</a>
-            <a id="graph_nav" href="#" class="item">Graph</a>
-            <a id="ports_nav" href="#" class="item">Ports</a>
-            <a id="register_nav" href="register.html" class="item">Register</a>
-            <a id="login_nav" href="login.html" class="item">Sign In</a>
-            <a id="scoreboard_nav" href="scoreboard.html" class="item">Scoreboard</a>
-            </nav>
+                <a href="#" class="brand item">King of the Hill</a>
+                <a id="network_nav" href="#" class="active item">Network</a>
+                <a id="graph_nav" href="#" class="item">Graph</a>
+                <a id="ports_nav" href="#" class="item">Ports</a>
+                <a id="register_nav" href="register.html" class="item">Register</a>
+                <a id="login_nav" href="login.html" class="item">Sign In</a>
+                <a id="scoreboard_nav" href="scoreboard.html" class="item">Scoreboard</a>
+                <div id="user-info" class="right menu">
+                    <!-- Will be filled by JS -->
+                  </div>
+                  
+                </nav>
             <div id="cy"></div>
             <div id="graph">
                 <h2 class="ui dividing header">
@@ -376,5 +380,55 @@
                 <h3>Only claimed machines are scanned. Tables update at each scanning interval.</h3>
                 <div id="tables"></div></div>
             <div id="messages" class="ui inverted segment"></div>
+            <!-- ✅ Place this just before the closing </body> tag -->
+<script>
+    fetch('/me', {
+      method: 'GET',
+      credentials: 'include'
+    })
+    .then(async response => {
+      const loginNav = document.getElementById('login_nav');
+      const registerNav = document.getElementById('register_nav');
+      const userInfo = document.getElementById('user-info');
+  
+      if (response.ok) {
+        const data = await response.json();
+        const username = data.username;
+  
+        userInfo.innerHTML = `
+          <div class="item">👋 Hello, <strong>${username}</strong></div>
+          <div class="item">
+            <button class="ui red mini button" id="logout_btn">Logout</button>
+          </div>
+        `;
+  
+        if (loginNav) loginNav.style.display = 'none';
+        if (registerNav) registerNav.style.display = 'none';
+  
+        document.getElementById('logout_btn').addEventListener('click', () => {
+  fetch('/logout', {
+    method: 'POST',
+    credentials: 'include'
+  })
+  .then(() => {
+    document.cookie = "sessionId=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    window.location.href = 'login.html';
+  })
+  .catch(err => {
+    console.error('Logout failed:', err);
+  });
+});
+
+  
+      } else {
+        if (loginNav) loginNav.style.display = '';
+        if (registerNav) registerNav.style.display = '';
+      }
+    })
+    .catch(err => {
+      console.error('Error checking login status:', err);
+    });
+  </script>
+  
         </body>
     </html>
