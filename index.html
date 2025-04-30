@@ -406,9 +406,19 @@
         if (registerNav) registerNav.style.display = 'none';
   
         document.getElementById('logout_btn').addEventListener('click', () => {
-          document.cookie = "sessionId=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-          location.reload();
-        });
+  fetch('/logout', {
+    method: 'POST',
+    credentials: 'include'
+  })
+  .then(() => {
+    document.cookie = "sessionId=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    window.location.href = 'login.html';
+  })
+  .catch(err => {
+    console.error('Logout failed:', err);
+  });
+});
+
   
       } else {
         if (loginNav) loginNav.style.display = '';

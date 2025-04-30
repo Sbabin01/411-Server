@@ -63,6 +63,9 @@
             document.getElementById('message').className = 'ui positive message';
             document.getElementById('message').textContent = text;
             form.reset();
+            setTimeout(() => {
+              window.location.href = 'login.html';
+            }, 1500);
           } else {
             document.getElementById('message').className = 'ui negative message';
             document.getElementById('message').textContent = text;
@@ -75,5 +78,6 @@
         });
       });
     </script>
+    
   </body>
 </html>

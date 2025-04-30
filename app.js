@@ -133,6 +133,17 @@ import_checks(checks_path).then(function (cs) {
     console.log(err);
     console.log('Failed to import checks: ');
 });
+// Logout endpoint
+app.post('/logout', function(req, res) {
+    const sessionId = req.cookies ? req.cookies.sessionId : null;
+    if (sessionId && sessions[sessionId]) {
+        delete sessions[sessionId]; // Remove session
+        res.clearCookie('sessionId'); // Clear sessionId cookie
+        res.status(200).send('Logged out');
+    } else {
+        res.status(400).send('No active session to log out');
+    }
+});
 
 
  //set up routing information
