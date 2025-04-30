@@ -94,6 +94,13 @@ app.post('/register', function(req, res) {
     }
     users.push(username);
     writeUsers(users);
+
+    // Initialize user score in environment["scores"] and persist to saved/network
+    if (!environment["scores"][username]) {
+        environment["scores"][username] = [0];
+        save_network();
+    }
+
     res.status(200).send('Registration successful.');
 });
 
@@ -377,10 +384,17 @@ function calculate_score() {
             }
         }
     }
-    for (var user in s) {
-        if (environment["scores"][user] == undefined) {
-            environment["scores"][user] = [s[user]];
+    // Ensure every user in environment["scores"] gets updated
+    for (var user in environment["scores"]) {
+        if (s[user] === undefined) {
+            // User did not score this round, repeat last score
+            if (environment["scores"][user].length > 0) {
+                environment["scores"][user].push(last(environment["scores"][user]));
+            } else {
+                environment["scores"][user].push(0);
+            }
         } else {
+            // User scored this round
             environment["scores"][user].push(last(environment["scores"][user]) + s[user]);
         }
     }
